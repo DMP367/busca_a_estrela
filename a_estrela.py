@@ -98,8 +98,8 @@ def main():
 	a_estrela(lst[cidades["Zerind"]], lst[cidades["Bucharest"]])
 	a_estrela(lst[cidades["Vaslui"]], lst[cidades["Bucharest"]])
 	a_estrela(lst[cidades["Lasi"]], lst[cidades["Bucharest"]])
-	#a_estrela(lst[cidades["Lugoj"]], lst[cidades["Bucharest"]])
-	# a_estrela(lst[cidades["Mehadia"]], lst[cidades["Bucharest"]])
+	#a_estrela(lst[cidades["Lugoj"]], lst[cidades["Bucharest"]]) # acabem sendo o melhor caminho um do outro
+	# a_estrela(lst[cidades["Mehadia"]], lst[cidades["Bucharest"]]) # acabam sem o melhor caminho um do outro
 	a_estrela(lst[cidades["Urziceni"]], lst[cidades["Bucharest"]])
 	a_estrela(lst[cidades["Neamt"]], lst[cidades["Bucharest"]])
 	#a_estrela(lst[cidades["Timisoara"]], lst[cidades["Bucharest"]])
