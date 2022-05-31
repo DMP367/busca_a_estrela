@@ -102,7 +102,7 @@ def main():
 	# a_estrela(lst[cidades["Mehadia"]], lst[cidades["Bucharest"]])
 	a_estrela(lst[cidades["Urziceni"]], lst[cidades["Bucharest"]])
 	a_estrela(lst[cidades["Neamt"]], lst[cidades["Bucharest"]])
-	a_estrela(lst[cidades["Timisoara"]], lst[cidades["Bucharest"]])
+	#a_estrela(lst[cidades["Timisoara"]], lst[cidades["Bucharest"]])
 	a_estrela(lst[cidades["Hirsova"]], lst[cidades["Bucharest"]])
 	a_estrela(lst[cidades["Dobreta"]], lst[cidades["Oradea"]])
 	a_estrela(lst[cidades["Arad"]], lst[cidades["Vaslui"]])
