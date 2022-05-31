@@ -72,18 +72,20 @@ def func_menor_caminho(root, cidades, distancias):
 
 def a_estrela (cidade_inicial, cidade_final):
     cidade_atual = cidade_inicial
+    root = []
+    root.append(cidade_inicial)
     distancia_percorrida = 0
     while cidade_atual != cidade_final:
         cidades = cidade_atual.lista_de_adjacencia
+        root.append(cidade_atual)
         distancias = []
-        root = cidade_inicial
        	
-        menor_caminho = func_menor_caminho(root, cidades, distancias)
+        menor_caminho = func_menor_caminho(root[-2], cidades, distancias)
         cidade_atual = menor_caminho[0][0]
         
         distancia_percorrida = distancia_percorrida + menor_caminho[0][1]
         print(f'Distância percorrida Até {cidade_atual.nome}: {distancia_percorrida}')
-        x = input()
+       # x = input()
     print(cidade_atual.nome, distancia_percorrida)
 
 
@@ -105,16 +107,16 @@ def main():
 		for adj in j["adjacentes"]:
 			lst[i].adiciona_adjacente(lst[cidades[adj["cidade"]]], int(adj["distancia"]))
 
-	# a_estrela(lst[cidades["Oradea"]], lst[cidades["Bucharest"]])
-	# a_estrela(lst[cidades["Zerind"]], lst[cidades["Bucharest"]])
-	# a_estrela(lst[cidades["Vaslui"]], lst[cidades["Bucharest"]])
-	# a_estrela(lst[cidades["Lasi"]], lst[cidades["Bucharest"]])
+	a_estrela(lst[cidades["Oradea"]], lst[cidades["Bucharest"]])
+	a_estrela(lst[cidades["Zerind"]], lst[cidades["Bucharest"]])
+	a_estrela(lst[cidades["Vaslui"]], lst[cidades["Bucharest"]])
+	a_estrela(lst[cidades["Lasi"]], lst[cidades["Bucharest"]])
 	a_estrela(lst[cidades["Lugoj"]], lst[cidades["Bucharest"]])
-	# a_estrela(lst[cidades["Mehadia"]], lst[cidades["Bucharest"]])
-	# a_estrela(lst[cidades["Urziceni"]], lst[cidades["Bucharest"]])
-	# a_estrela(lst[cidades["Neamt"]], lst[cidades["Bucharest"]])
-	# a_estrela(lst[cidades["Timisoara"]], lst[cidades["Bucharest"]])
-	# a_estrela(lst[cidades["Hirsova"]], lst[cidades["Bucharest"]])
+	a_estrela(lst[cidades["Mehadia"]], lst[cidades["Bucharest"]])
+	a_estrela(lst[cidades["Urziceni"]], lst[cidades["Bucharest"]])
+	a_estrela(lst[cidades["Neamt"]], lst[cidades["Bucharest"]])
+	a_estrela(lst[cidades["Timisoara"]], lst[cidades["Bucharest"]])
+	a_estrela(lst[cidades["Hirsova"]], lst[cidades["Bucharest"]])
 	# a_estrela(lst[cidades["Dobreta"]], lst[cidades["Oradea"]])
 	# a_estrela(lst[cidades["Arad"]], lst[cidades["Vaslui"]])
 	# a_estrela(lst[cidades["Arad"]], lst[cidades["Eforie"]])
