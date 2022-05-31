@@ -1,4 +1,32 @@
-class Cidade ():
+
+
+from json import load
+
+cidades = {
+		"Arad":0,
+		"Bucharest":1,
+		"Craiova":2,
+		"Dobreta":3,
+		"Eforie":4,
+		"Fagaras":5,
+		"Giurgiu":6,
+		"Hirsova":7,
+		"Lasi":8,
+		"Lugoj":9,
+		"Mehadia":10,
+		"Neamt":11,
+		"Oradea":12,
+		"Pitesti":13,
+		"Rimmicu Vilcea":14,
+		"Sibiu":15,
+		"Timisoara":16,
+		"Urziceni":17,
+		"Vaslui":18,
+		"Zerind":19
+	}
+
+
+class Cidade:
     def __init__ (self, nome, distancia_em_linha_reta):
         self.nome = nome
         self.distancia_em_linha_reta = distancia_em_linha_reta
@@ -7,14 +35,17 @@ class Cidade ():
     def __str__ (self):
         return f'Nome: {self.nome}, Distância em linha reta do objetivo: {self.distancia_em_linha_reta}'
 
+
     def adiciona_adjacente (self, cidade, distancia):
         item = (cidade, distancia)
         self.lista_de_adjacencia.append(item)
+
 
     def mostra_adjacentes (self):
         print(f"Cidades adjacentes a {self.nome}:")
         for i in self.lista_de_adjacencia:
             print(i[0], f", Distância entre as cidades: {i[1]}")
+
 
 
 def a_estrela (cidade_inicial, cidade_final):
@@ -29,8 +60,7 @@ def a_estrela (cidade_inicial, cidade_final):
             nome_da_cidade = i
             distancia = i[0].distancia_em_linha_reta + i[1]
             tupla = (nome_da_cidade, distancia)
-            print(tupla)
-
+            #print(tupla)
             if len(distancias) == 0:
                 menor_caminho = tupla
             else:
@@ -41,42 +71,42 @@ def a_estrela (cidade_inicial, cidade_final):
         
         cidade_atual = menor_caminho[0][0]
         distancia_percorrida = distancia_percorrida + menor_caminho[0][1]
-
+        print(f'Distância percorrida Até {cidade_atual.nome}: {distancia_percorrida}')
     
     print(cidade_atual.nome, distancia_percorrida)
 
 
+
+
+
 def main():
-    ceilandia = Cidade("Ceilandia", 42)
-    aguas_claras = Cidade("Aguas Claras", 47)
-    samambaia = Cidade("Samambaia", 32)
-    sobradinho = Cidade("Sobradinho", 0)
-    taguatinga = Cidade("Taguatinga", 100)
-    vicente_pires = Cidade("Vicente Pires", 42)
+	dados = load(cidades_json)
 
-    taguatinga.adiciona_adjacente(ceilandia, 30)
-    taguatinga.adiciona_adjacente(aguas_claras, 27)
-    taguatinga.adiciona_adjacente(samambaia, 47)
+	lst = []
 
-    ceilandia.adiciona_adjacente(taguatinga, 30)
-    ceilandia.adiciona_adjacente(samambaia, 22)
+	for i, j in enumerate(dados):
+		cidade = j["cidade"]
+		distancia_em_linha_reta = int(j["distancia_linha_reta"])
+		lst.append(Cidade(cidade, distancia_em_linha_reta))
 
-    samambaia.adiciona_adjacente(taguatinga, 47)
-    samambaia.adiciona_adjacente(sobradinho, 32)
-    samambaia.adiciona_adjacente(vicente_pires, 17)
+	for i, j in enumerate(dados):
+		for adj in j["adjacentes"]:
+			lst[i].adiciona_adjacente(lst[cidades[adj["cidade"]]], int(adj["distancia"]))
 
-    sobradinho.adiciona_adjacente(samambaia, 32)
-    sobradinho.adiciona_adjacente(vicente_pires, 15)
+	a_estrela(lst[cidades["Oradea"]], lst[cidades["Bucharest"]])
+	a_estrela(lst[cidades["Zerind"]], lst[cidades["Bucharest"]])
+	a_estrela(lst[cidades["Vaslui"]], lst[cidades["Bucharest"]])
+	a_estrela(lst[cidades["Lasi"]], lst[cidades["Bucharest"]])
+	a_estrela(lst[cidades["Lugoj"]], lst[cidades["Bucharest"]])
+	# a_estrela(lst[cidades["Mehadia"]], lst[cidades["Bucharest"]])
+	# a_estrela(lst[cidades["Urziceni"]], lst[cidades["Bucharest"]])
+	# a_estrela(lst[cidades["Neamt"]], lst[cidades["Bucharest"]])
+	# a_estrela(lst[cidades["Timisoara"]], lst[cidades["Bucharest"]])
+	# a_estrela(lst[cidades["Hirsova"]], lst[cidades["Bucharest"]])
+	# a_estrela(lst[cidades["Dobreta"]], lst[cidades["Oradea"]])
+	# a_estrela(lst[cidades["Arad"]], lst[cidades["Vaslui"]])
+	# a_estrela(lst[cidades["Arad"]], lst[cidades["Eforie"]])
 
-    vicente_pires.adiciona_adjacente(samambaia, 17)
-    vicente_pires.adiciona_adjacente(sobradinho, 15)
-
-    aguas_claras.adiciona_adjacente(taguatinga, 27)
-
-
-    a_estrela(aguas_claras, sobradinho)
 
 if __name__ == '__main__':
-    main()
-
-
+	main()
