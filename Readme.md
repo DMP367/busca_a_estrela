@@ -1,6 +1,8 @@
 # Algoritmo de Busca A*
 
-	def: É um algoritmo para Busca de Caminho. Ele busca o caminho em um grafo de um vértice inicial até um vértice final. Ele é a combinação de aproximações heurísticas como do algoritmo Breadth First Search (Busca em Largura) e da formalidade do Algoritmo de Dijkstra.
+	def: É um algoritmo para Busca de Caminho. Ele busca o caminho em um grafo de um vértice 
+	inicial até um vértice final. Ele é a combinação de aproximações heurísticas como do algoritmo
+	Breadth First Search (Busca em Largura) e da formalidade do Algoritmo de Dijkstra.
 
 	*Nós (N)= conjunto de nós a serem pesquisados;
 	*Inicio(I) = o estado inicial da busca
