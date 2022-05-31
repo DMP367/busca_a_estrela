@@ -98,15 +98,15 @@ def main():
 	a_estrela(lst[cidades["Zerind"]], lst[cidades["Bucharest"]])
 	a_estrela(lst[cidades["Vaslui"]], lst[cidades["Bucharest"]])
 	a_estrela(lst[cidades["Lasi"]], lst[cidades["Bucharest"]])
-	a_estrela(lst[cidades["Lugoj"]], lst[cidades["Bucharest"]])
+	#a_estrela(lst[cidades["Lugoj"]], lst[cidades["Bucharest"]])
 	# a_estrela(lst[cidades["Mehadia"]], lst[cidades["Bucharest"]])
-	# a_estrela(lst[cidades["Urziceni"]], lst[cidades["Bucharest"]])
-	# a_estrela(lst[cidades["Neamt"]], lst[cidades["Bucharest"]])
-	# a_estrela(lst[cidades["Timisoara"]], lst[cidades["Bucharest"]])
-	# a_estrela(lst[cidades["Hirsova"]], lst[cidades["Bucharest"]])
-	# a_estrela(lst[cidades["Dobreta"]], lst[cidades["Oradea"]])
-	# a_estrela(lst[cidades["Arad"]], lst[cidades["Vaslui"]])
-	# a_estrela(lst[cidades["Arad"]], lst[cidades["Eforie"]])
+	a_estrela(lst[cidades["Urziceni"]], lst[cidades["Bucharest"]])
+	a_estrela(lst[cidades["Neamt"]], lst[cidades["Bucharest"]])
+	a_estrela(lst[cidades["Timisoara"]], lst[cidades["Bucharest"]])
+	a_estrela(lst[cidades["Hirsova"]], lst[cidades["Bucharest"]])
+	a_estrela(lst[cidades["Dobreta"]], lst[cidades["Oradea"]])
+	a_estrela(lst[cidades["Arad"]], lst[cidades["Vaslui"]])
+	a_estrela(lst[cidades["Arad"]], lst[cidades["Eforie"]])
 
 
 if __name__ == '__main__':
