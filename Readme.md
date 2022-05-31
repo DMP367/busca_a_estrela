@@ -13,5 +13,6 @@
 	> Se N está vazio, interrompa. Se não, escolha o melhor elemento de N;
 	> Se o estado (n) é um objetivo, retorne n;
 	> (De outro modo) Remova n de N;
-	>  Encontre os descendentes do estado (n) que não estão em visitados e crie todas as extensões de n para cada descendente;
+	>  Encontre os descendentes do estado (n) que não estão em visitados e crie todas as extensões de n
+	   para cada descendente;
 	> Adicione os caminhos estendidos a N e vá ao passo 2;
