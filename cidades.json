@@ -1,0 +1,308 @@
+[
+ 	{
+ 		"cidade": "Arad",
+		"distancia_linha_reta": 366,
+		"adjacentes": [
+			{
+				"cidade": "Zerind",
+				"distancia": 75
+			},
+			{
+				"cidade": "Sibiu",
+				"distancia": 140
+			},
+			{
+				"cidade": "Timisoara",
+				"distancia": 118
+			}
+		]
+	},
+ 	{
+ 		"cidade": "Bucharest",
+		"distancia_linha_reta": 0,
+		"adjacentes":[
+			{
+				"cidade": "Giurgiu",
+				"distancia": 90
+			},
+			{
+				"cidade": "Urziceni",
+				"distancia": 85
+			},
+			{
+				"cidade": "Fagaras", 
+				"distancia": 211
+			},
+			{
+				"cidade": "Pitesti", 
+				"distancia": 101
+			}
+		]
+	},
+ 	{
+ 		"cidade": "Craiova",
+		"distancia_linha_reta": 160,
+		"adjacentes": [
+			{
+				"cidade": "Pitesti", 
+				"distancia": 138
+			},
+			{
+				"cidade": "Rimmicu Vilcea", 
+				"distancia": 146
+			},
+			{
+				"cidade": "Dobreta",
+				"distancia": 120
+			}
+		]
+	},
+ 	{
+ 		"cidade": "Dobreta",
+		"distancia_linha_reta": 242,
+		"adjacentes":[
+			{
+				"cidade": "Craiova", 
+				"distancia": 120
+			},
+			{
+				"cidade": "Mehadia", 
+				"distancia": 75
+			}
+		]
+	},
+	{
+		"cidade": "Eforie",
+		"distancia_linha_reta": 161,
+		"adjacentes": [
+			{
+				"cidade": "Hirsova",
+				"distancia": 86
+			}
+		]
+	},
+ 	{
+ 		"cidade": "Fagaras",
+		"distancia_linha_reta": 176,
+		"adjacentes": [
+			{
+				"cidade": "Bucharest", 
+				"distancia": 211
+			},
+			{
+				"cidade": "Sibiu",
+				"distancia": 99
+			}
+		]
+	},
+ 	{
+ 		"cidade": "Giurgiu",
+		"distancia_linha_reta": 77,
+		"adjacentes": [
+			{
+				"cidade": "Bucharest", 
+				"distancia": 90
+			}
+		]
+	},
+ 	{
+ 		"cidade": "Hirsova",
+		"distancia_linha_reta": 151,
+		"adjacentes":[
+			{
+				"cidade": "Eforie", 
+				"distancia": 86
+			},
+			{
+				"cidade": "Urziceni", 
+				"distancia": 98
+			}
+		]
+	},
+ 	{
+ 		"cidade": "Lasi",
+		"distancia_linha_reta": 226,
+		"adjacentes": [
+			{
+				"cidade": "Vaslui" ,
+				"distancia": 92
+			},
+			{
+				"cidade": "Neamt",
+				"distancia": 87
+			}
+
+		]
+	},
+	{
+		"cidade": "Lugoj",
+		"distancia_linha_reta": 244,
+		"adjacentes":[
+			{
+				"cidade": "Mehadia",
+				"distancia": 70
+			},
+			{
+				"cidade": "Timisoara",
+				"distancia": 111
+			}
+		]
+	},
+	{
+		"cidade": "Mehadia",
+		"distancia_linha_reta": 241,
+		"adjacentes": [
+			{
+				"cidade": "Lugoj" ,
+				"distancia": 70
+			},
+			{
+				"cidade": "Dobreta", 
+				"distancia": 75
+			} 
+
+		]
+	},
+	{
+		"cidade": "Neamt",
+		"distancia_linha_reta": 234,
+		"adjacentes":[
+			{
+				"cidade": "Lasi", 
+				"distancia": 87
+			}
+		]
+	},
+	{
+		"cidade": "Oradea",
+		"distancia_linha_reta": 380,
+		"adjacentes": [
+			{
+				"cidade": "Zerind",
+				"distancia": 71
+			},
+			{
+				"cidade": "Sibiu",
+				"distancia": 151
+			}
+		]
+	},
+	{
+		"cidade": "Pitesti",
+		"distancia_linha_reta": 100,
+		"adjacentes":[
+			{
+				"cidade": "Bucharest",
+				"distancia": 101
+			},
+			{
+				"cidade": "Rimmicu Vilcea",
+				"distancia": 97
+			},
+			{
+				"cidade": "Craiova",
+				"distancia": 138
+			}
+ 		]
+	},
+	{
+		"cidade": "Rimmicu Vilcea",
+		"distancia_linha_reta": 193,
+		"adjacentes": [
+			{
+				"cidade": "Sibiu",
+				"distancia": 80
+			},
+			{
+				"cidade": "Craiova",
+				"distancia": 146
+			},
+			{
+				"cidade": "Pitesti",
+				"distancia": 97
+			}
+		]
+	},
+	{
+		"cidade": "Sibiu",
+		"distancia_linha_reta": 253,
+		"adjacentes": [
+			{
+				"cidade": "Fagaras",
+				"distancia": 99
+			},
+			{
+				"cidade": "Rimmicu Vilcea",
+				"distancia": 80
+			},
+			{
+				"cidade": "Arad",
+				"distancia": 140
+			},
+			{
+				"cidade": "Oradea",
+				"distancia": 151
+			}
+		]
+	},
+	{
+		"cidade": "Timisoara",
+		"distancia_linha_reta": 329,
+		"adjacentes": [
+			{
+				"cidade": "Arad",
+				"distancia": 118
+			},
+			{
+				"cidade": "Lugoj",
+				"distancia": 111
+			}
+		]
+	},
+	{
+		"cidade": "Urziceni",
+		"distancia_linha_reta": 80,
+		"adjacentes": [
+			{
+				"cidade": "Bucharest",
+				"distancia": 83
+			},
+			{
+				"cidade": "Vaslui",
+				"distancia": 142
+			},
+			{
+				"cidade": "Hirsova",
+				"distancia": 98
+			}
+		]
+	},
+	{
+		"cidade": "Vaslui",
+		"distancia_linha_reta": 199,
+		"adjacentes": [
+			{
+				"cidade": "Lasi",
+				"distancia": 92
+			},
+			{
+				"cidade": "Urziceni",
+				"distancia": 142
+			}
+		]
+	},
+	{
+		"cidade": "Zerind",
+		"distancia_linha_reta": 374,
+		"adjacentes":[
+			{
+				"cidade": "Oradea",
+				"distancia": 71
+			},
+			{
+				"cidade": "Arad",
+				"distancia": 75
+			}
+		]
+	}
+]
