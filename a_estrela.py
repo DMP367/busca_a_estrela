@@ -80,7 +80,8 @@ def a_estrela (cidade_inicial, cidade_final):
 
 
 def main():
-	dados = load(cidades_json)
+	with open("cidades.json", "r") as file:
+		dados = load(file)
 
 	lst = []
 
